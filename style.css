@@ -11,6 +11,8 @@
 
   --previewBg: rgb(251, 249, 243, 0.8);
   --previewShadow: #f0ead6;
+
+  --buttonColor:black;
 }
 
 html,
@@ -110,6 +112,10 @@ h6 {
   grid-template-areas:
     "nav-wrapper nav-wrapper"
     "left-column right-column";
+}
+
+#navigation a{
+	color:var(--mainText);
 }
 
 .nav-wrapper {
@@ -349,3 +355,15 @@ h6 {
     justify-content: center;
   }
 }
+@media screen and (max-width: 400px){
+	#preview-shadow{
+		max-width: 280px;
+		height: 180px;
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+
+	#preview{
+		width: 280px;
+
+	}
